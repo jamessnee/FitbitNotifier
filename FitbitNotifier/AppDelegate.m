@@ -32,6 +32,10 @@
 - (void)updateStatus{
     NSString *status = [NSString stringWithFormat:@"Steps: %@",self.steps];
     [self.statusMenuItem setTitle:status];
+    
+    //  If there's no timer (i.e. this is the first time) start it
+    if (!self.backgroundTimer)
+        self.backgroundTimer = [NSTimer scheduledTimerWithTimeInterval:600 target:self selector:@selector(beginStatusCheck:) userInfo:nil repeats:YES];
 }
 
 - (IBAction)goGetAccessToken:(id)sender
@@ -39,6 +43,11 @@
     [self.apiConnection setPin:[self.pinText stringValue]];
     [self.apiConnection getAccessToken];
     [self.apiConnection getStepsForDate:nil];
+}
+
+- (void)beginStatusCheck:(NSTimer *)timer
+{
+    [self.apiConnection getStepsForDate:[NSDate date]];
 }
 
 @end
