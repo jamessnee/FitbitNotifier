@@ -16,12 +16,13 @@
 @property (strong, nonatomic) IBOutlet NSMenu *statusMenu;
 @property (strong, nonatomic) IBOutlet NSMenuItem *statusMenuItem;
 @property (strong, nonatomic) IBOutlet NSTextField *pinText;
-
 @property (strong, nonatomic) NSString *steps;
+@property (strong, nonatomic) NSTimer *backgroundTimer;
 
 @property (strong, nonatomic) FitbitAPIConnection *apiConnection;
 
 - (IBAction)goGetAccessToken:(id)sender;
 - (void)updateStatus;
+- (void)beginStatusCheck:(NSTimer *)timer;
 
 @end
