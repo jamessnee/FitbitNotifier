@@ -47,6 +47,8 @@
                   didFailSelector:@selector(apiTicket:didFailWithError:)];
 }
 
+#pragma mark - Signing In
+
 - (BOOL)signIn
 {
     if (!self.accessToken)
@@ -157,7 +159,6 @@
 }
 
 //  API Callback
-
 - (void) apiTicket:(OAServiceTicket *)ticket didFinishWithData:(NSData *)data
 {
 	if (ticket.didSucceed)
