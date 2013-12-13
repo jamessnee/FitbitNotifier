@@ -99,10 +99,10 @@
 		5979BEB7185905A800A905F3 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
 		5979BEB8185905A800A905F3 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
 		5979BEB9185905A800A905F3 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
-		599E056D1858DDA5007FB373 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		599E05A11858E682007FB373 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		599E05A31858E689007FB373 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		599E05A51858E730007FB373 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		59F8B0F1185A877E007B1F73 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +179,7 @@
 				592CEA841858D6B400BFE7BE /* FitbitAPIConnection.m */,
 				592CEA5F1858CE8400BFE7BE /* AppDelegate.h */,
 				592CEA601858CE8400BFE7BE /* AppDelegate.m */,
-				599E056D1858DDA5007FB373 /* Constants.h */,
+				59F8B0F1185A877E007B1F73 /* Constants.h */,
 				592CEA621858CE8400BFE7BE /* MainMenu.xib */,
 				592CEA651858CE8400BFE7BE /* Images.xcassets */,
 				592CEA541858CE8400BFE7BE /* Supporting Files */,
